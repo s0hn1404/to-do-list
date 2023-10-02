@@ -7,11 +7,36 @@ body{
     max-width: 100%;
     background-color: papayawhip; 
     margin: 0;
- 
+    
 }
 
+.today{
+    background-image: url('../src/todayicon.png');
+}
 
+.upcoming{
+    background-image: url("../src/upcoming.png")
+}
 
+.tasks{
+    background-image: url("../src/tasks.png")
+}
+
+.mylist{
+    background: url('../src/my.png');
+    display: flex;
+}
+
+h1{
+    background-image: url("../src/settings.png");
+}
+.today, .upcoming, .tasks, .mylist, h1{
+    background-repeat: no-repeat;
+    background-position: left;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
 
 .leftsidebar{
     display: flex;
@@ -20,12 +45,16 @@ body{
     background-color: rgb(61, 118, 118);
     flex-direction: column;
     gap: 100px;
+    
 }
 
-ul{
+ul {
+    flex-direction: column;
+    display: flex;
     list-style: none;
     font-size: 1em;
     font-weight: bold;
-    
+    row-gap: 13px;
 }
+
 
