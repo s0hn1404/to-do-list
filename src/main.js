@@ -6,6 +6,13 @@ const list = () => {
     home.classList.add('leftsidebar')
     content.appendChild(home)
 
+    const sidebarh = document.createElement('div')
+    sidebarh.classList.add('sidebarh')
+    sidebarh.addEventListener('click', (e) => {
+        sidebarleft.style.display = 'flex'
+    })
+    content.appendChild(sidebarh)
+
     const profile = document.createElement('div')
     profile.classList.add('profile')
     home.appendChild(profile)
@@ -68,6 +75,7 @@ const list = () => {
     himsg.classList.add('welcomemsg')
     welcome.appendChild(himsg)
     
+
    const upcomingmsg = document.createElement('div')
    upcomingmsg.classList.add('upcomingmsg')
    right.appendChild(upcomingmsg)
@@ -121,6 +129,70 @@ const list = () => {
     const suninput = document.createElement('input')
     upcomingsun.appendChild(suninput)
 
+    const taskspage = document.createElement('div')
+    taskspage.classList.add('taskspage')
+    right.appendChild(taskspage)
+
+    const taskhead = document.createElement('div')
+    taskhead.classList.add('taskhead')
+    taskspage.append(taskhead)
+
+    const taskheadcontent = document.createElement('h2')
+    taskheadcontent.textContent = 'All my tasks'
+    taskhead.appendChild(taskheadcontent)
+
+    const taskbody = document.createElement('div')
+    taskbody.classList.add('taskbody')
+    taskspage.appendChild(taskbody)
+
+    const tasktod = document.createElement('h2')
+    tasktod.textContent = 'Today'
+    taskbody.appendChild(tasktod)
+
+    const tasktom = document.createElement('h2')
+    tasktom.textContent = 'Tomorrow'
+    taskbody.appendChild(tasktom)
+
+    const taskup = document.createElement('h2')
+    taskup.textContent = 'Upcoming'
+    taskbody.appendChild(taskup)
+
+    const tasksom = document.createElement('h2')
+    tasksom .textContent = 'Someday'
+    taskbody.appendChild(tasksom)
+    const taskinput = document.createElement('input')
+    taskinput.classList.add('taskinput')
+    taskbody.appendChild(taskinput)
+
+    const personallist = document.createElement('div')
+    personallist.classList.add('personallist')
+    right.appendChild(personallist)
+
+    const personal1 = document.createElement('div')
+    personal1.classList.add('personal1')
+    personal1.textContent = 'Work'
+    personallist.appendChild(personal1)
+
+    const personalctr = document.createElement('div')
+    personalctr.classList.add('personalctr')
+    personallist.appendChild(personalctr)
+
+    const personal1ipt = document.createElement('input')
+    personal1ipt.classList.add('personal1ipt')
+    personalctr.appendChild(personal1ipt)
+
+    const personal2 = document.createElement('div')
+    personal2.classList.add('personal2')
+    personal2.textContent = 'Groceries'
+    personallist.appendChild(personal2)
+
+    const personal2ctr = document.createElement('div')
+    personal2ctr.classList.add('personal2ctr')
+    personallist.appendChild(personal2ctr)
+
+    const personal2ipt = document.createElement('input')
+    personal2ipt.classList.add('personal2ipt')
+    personal2ctr.appendChild(personal2ipt)
 }
 
 
